@@ -25,7 +25,7 @@ class AccountsCreateView(CreateAPIView):
         send_mail(
             "Verification Code",
             f"Your verification code is: {otp} ",
-            'TalabaUz <setting.EMAIL_HOST_USER>',
+            'MockMe <setting.EMAIL_HOST_USER>',
             [email],
             fail_silently=False,
         )
